@@ -9,7 +9,12 @@ class Payroll():
     
     def addEmp(self, e):
         self.emp.append(e)
-
+    
+    def total(self):
+        total_Pay = 0
+        for i in self.emp:
+            total_Pay += i.getPay()
+        return total_Pay
 
 
     
