@@ -16,5 +16,13 @@ class Payroll():
             total_Pay += i.getPay()
         return total_Pay
 
-
-    
+    def sort(self):
+        for ind in range(self.emp):
+            min_index = ind
+ 
+        for j in range(ind + 1, self.emp):
+            # select the minimum element in every iteration
+            if self.emp[j].getPay() < self.emp[min_index].getPay():
+                min_index = j
+         # swapping the elements to sort the array
+        (self.emp[ind], self.emp[min_index]) = (self.emp[min_index], self.emp[ind])
