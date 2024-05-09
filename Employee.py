@@ -13,3 +13,6 @@ class Employee():
     def getPay(self):
         return self.pay
     
+    def getLastName(self):
+        return self.lastName
+    

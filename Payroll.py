@@ -25,4 +25,8 @@ class Payroll():
             if self.emp[j].getPay() < self.emp[min_index].getPay():
                 min_index = j
          # swapping the elements to sort the array
-        (self.emp[ind], self.emp[min_index]) = (self.emp[min_index], self.emp[ind])
+        (self.emp[ind], self.emp[min_index]) = (self.emp[min_index], self.emp[ind])    
+    def employeePay(self, lastName: str):
+        for i in self.emp:
+            if i.getLastName() == lastName:
+                return i.getPay()
