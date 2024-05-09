@@ -16,5 +16,8 @@ class Payroll():
             total_Pay += i.getPay()
         return total_Pay
 
-
+    def employeePay(self, lastName: str):
+        for i in self.emp:
+            if i.getLastName() == lastName:
+                return i.getPay()
     
